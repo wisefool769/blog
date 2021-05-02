@@ -15,20 +15,6 @@ When you invest in a SPAC nowadays, you are typically buying $10 units which con
 
 ## What Are They Worth? 
 The value of the SPAC is floored at $10, since if the deal falls through, you can always get out here. Beyond that, you are just worried about the option premium.
-We can use the dirty approximation for an at-the-money call option's value, 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']],
-		processEscapes: true},
-		jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-		extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-		TeX: {
-			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-			equationNumbers: {
-				autoNumber: "AMS"
-			}
-		}
-});
-</script>
+We can use the dirty approximation for an at-the-money call option's value, as 0.4 * (Underlying Price)  * Volatility * sqrt(Time to Expiry). If you assume the price is 10, vol is 50%, and time to expiry is 6 months, you get to $1.40 -- giving a lower bound for SPAC value of $11.40. Of course, this is fairly conservative. Realized SPAC vol is somewhat higher than 50%, and perhaps you think the choice of target company has additional alpha. On the other hand, if you think that SPAC's are really just momentum plays on bad companies, this isn't really written for you. 
+
 
